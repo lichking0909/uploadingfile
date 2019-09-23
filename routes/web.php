@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','FrontendController@index');
+
+Route::get('/uploading','FrontendController@uploading');
+
+Route::get('/file','FrontendController@fileuploads');
+
+Route::get('/videos','FrontendController@videoviewer');
